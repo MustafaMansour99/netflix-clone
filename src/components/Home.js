@@ -4,8 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import MovieList from "./MovieList";
 function Home() {
     const [movieArr, setmovieArr] = useState([]);
-
-
     const sendRequest = async () => {
         const Url = 'https://movies-library-lilac.vercel.app/trending';
         const response = await fetch(Url);
@@ -13,26 +11,14 @@ function Home() {
         console.log(data);
         setmovieArr(data)
     }
-    useEffect(()=>{
+    useEffect(() => {
         sendRequest();
     }, [])
-
-
     return (
         <>
-            {/* <Row xs={1} md={3} className="g-4">
-                {movieArr.map((item) => {
-                    return <MovieList movie={item}/>
-                })}
-            </Row>
-                */}
-                <MovieList movie={movieArr}/>
+            <MovieList movie={movieArr} />
 
         </>
-
-        
-
-
     );
 }
 
