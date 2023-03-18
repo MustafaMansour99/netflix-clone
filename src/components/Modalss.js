@@ -69,7 +69,7 @@ function Modalss(props) {
               </Form.Group>
 
               <Button variant="primary" type="submit">
-                Save Changes
+              save change comment
               </Button>
               <Button variant="secondary" onClick={props.handleclose}>
                 Close
