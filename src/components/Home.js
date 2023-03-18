@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
-import Row from 'react-bootstrap/Row';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import MovieList from "./MovieList";
+// import './Home.css';
 function Home() {
     const [movieArr, setmovieArr] = useState([]);
     const sendRequest = async () => {
-        const Url = 'https://movies-library-lilac.vercel.app/trending';
+        const Url =`${process.env.REACT_APP_URL}trending`;
         const response = await fetch(Url);
         const data = await response.json();
         console.log(data);
@@ -16,7 +15,7 @@ function Home() {
     }, [])
     return (
         <>
-            <MovieList movie={movieArr} />
+            <MovieList  movie={movieArr} />
 
         </>
     );

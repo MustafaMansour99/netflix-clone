@@ -29,6 +29,9 @@ function Movie(props) {
                 </Card>
             </Col>
             <ModalMovie showFlag={showFlag} handleclose={handleclose} MovieData={clickedMovie} />
+
+            
+
         </>)
 }
 
