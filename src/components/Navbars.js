@@ -1,18 +1,19 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-
+import './Navbars.css'
+import { Link } from 'react-router-dom';
 function Navbars() {
   return (
     <>
-            <Navbar bg="dark" variant="dark">
+            <Navbar  bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">MoviesLibrary</Navbar.Brand>
+          <Navbar.Brand href="/">MoviesLibrary</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/movie">Movie</Nav.Link>
-
-            <Nav.Link href="/favlist">Fav List</Nav.Link>
+            <div className='fav'>
+            <Link to="/" className='fav1'>Home</Link>
+            <Link to="/favlist" className='fav1'>Fav List</Link>
+            </div>
           </Nav>
         </Container>
       </Navbar>

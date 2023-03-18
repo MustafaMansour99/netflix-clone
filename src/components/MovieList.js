@@ -6,7 +6,7 @@ function MovieList(props) {
             <h1>Trending</h1>
             <Row xs={1} md={3} className="g-4">
                 {props.movie.map((item) => {
-                    return <Movie favmovie={item}/>
+                    return <Movie key={item.id} favmovie={item}/>
                 })}
             </Row>
                

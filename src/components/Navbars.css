@@ -1,0 +1,14 @@
+.fav1{
+    color: white;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+  
+}
+.fav1:hover {
+    background-color: #ddd;
+    color: black;
+  }

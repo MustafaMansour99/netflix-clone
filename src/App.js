@@ -3,6 +3,7 @@ import FavList from './components/FavList ';
 import Movie from './components/Movie';
 import Navbars from './components/Navbars';
 import { Route, Routes } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 function App() {
   return (
