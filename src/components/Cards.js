@@ -47,7 +47,8 @@ function Cards(props) {
             src={`https://image.tmdb.org/t/p/w500${props.favmovie.poster_path}`}
           />
           <Card.Body>
-            <Card.Title>{props.favmovie.title}</Card.Title>
+            <Card.Title>Movie Name: {props.favmovie.title}</Card.Title>
+            <hr></hr>
             <Card.Title>Comment: {props.favmovie.comment}</Card.Title>
           </Card.Body>
           <Button

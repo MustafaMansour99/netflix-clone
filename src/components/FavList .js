@@ -26,7 +26,7 @@ const handleChildDataChange = (childData) => {
 
 
   return (
-    <Row xs={1} md={3} className="g-4">
+    <Row xs={1} md={3} className="g-4" style={{background: "#121416de"}}>
     {movieArr.map((item) => {
         return <Cards key={item.id} favmovie={item}  handleChildDataChange={handleChildDataChange} />
     })}
